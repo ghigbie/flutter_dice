@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dice_page.dart';
+import 'constants.dart';
 
 void main() => runApp(DiceeApp());
 
@@ -9,7 +10,7 @@ class DiceeApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Dicee'),
+          title: Text(APP_NAME),
           backgroundColor: Colors.red,
         ),
         body: DicePage(),
