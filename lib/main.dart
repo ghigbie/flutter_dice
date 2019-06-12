@@ -9,6 +9,7 @@ class DiceeApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.red,
         appBar: AppBar(
           title: Text(APP_NAME),
           backgroundColor: Colors.red,
