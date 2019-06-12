@@ -1,3 +1,4 @@
+import 'package:dicee/constants.dart';
 import 'package:flutter/material.dart';
 
 class DicePage extends StatelessWidget{
@@ -8,25 +9,19 @@ class DicePage extends StatelessWidget{
         child: Row(
           children: <Widget>[
             Expanded(
-              child: AspectRatio(
-                aspectRatio: 1/1,
-                child: Container(
-                  child: Padding(
-                    padding: EdgeInsets.all(20),
-                    child: Image.asset('images/dice1.png')
-                  ),
+              child: Container(
+                child: Padding(
+                  padding: EdgeInsets.all(DICE_PADDING),
+                  child: Image.asset('images/dice1.png')
                 ),
               ),
             ),
             Expanded(
-              child: AspectRatio(
-                aspectRatio: 1/1,
+              child: Container(
                 child: Container(
-                  child: Container(
-                    child: Padding(
-                      padding: EdgeInsets.all(20),
-                      child: Image.asset('images/dice2.png')
-                    ),
+                  child: Padding(
+                    padding: EdgeInsets.all(DICE_PADDING),
+                    child: Image.asset('images/dice2.png')
                   ),
                 ),
               ),
