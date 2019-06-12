@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var leftDiceNumber = 1;
-    var rightDiceNumber = 2;
+    int leftDiceNumber = 1;
+    int rightDiceNumber = 2;
     return Center(
       child: Container(
         child: Row(
