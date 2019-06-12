@@ -10,13 +10,29 @@ class DicePage extends StatelessWidget{
             Expanded(
               child: AspectRatio(
                 aspectRatio: 1/1,
-                child: Container()
+                child: Container(
+                  child: Padding(
+                    padding: EdgeInsets.all(20),
+                    child: Image(
+                      image: AssetImage('images/dice1.png')
+                    )
+                  )
+                )
               )
             ),
             Expanded(
               child: AspectRatio(
                 aspectRatio: 1/1,
-                child: Container()
+                child: Container(
+                  child: Container(
+                    child: Padding(
+                      padding: EdgeInsets.all(20),
+                      child: Image(
+                        image: AssetImage('images/dice2.png')
+                      )
+                    )
+                  )
+                )
               )
             )
           ],
