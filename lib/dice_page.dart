@@ -2,10 +2,11 @@ import 'package:dicee/constants.dart';
 import 'package:flutter/material.dart';
 
 class DicePage extends StatelessWidget {
+  int leftDiceNumber = 1;
+  int rightDiceNumber = 2;
+
   @override
   Widget build(BuildContext context) {
-    int leftDiceNumber = 1;
-    int rightDiceNumber = 2;
     return Center(
       child: Container(
         child: Row(
@@ -26,7 +27,7 @@ class DicePage extends StatelessWidget {
                       onPressed: () {
                         print('Rigth button was pressed.');
                       },
-                      child: Image.asset('images/dice2$rightDiceNumber.png')),
+                      child: Image.asset('images/dice$rightDiceNumber.png')),
                 ),
               ),
             ),
