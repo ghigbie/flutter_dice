@@ -1,4 +1,5 @@
 import 'package:dicee/constants.dart';
+import 'dart:math';
 import 'package:flutter/material.dart';
 
 class DicePage extends StatefulWidget {
@@ -20,7 +21,9 @@ class _DicePageState extends State<DicePage> {
               child: Container(
                 child: FlatButton(
                     onPressed: () {
-                      leftDiceNumber = 4;
+                      setState(() {
+                        leftDiceNumber = 4;
+                      });
                       print('Left button was pressed. Value: $leftDiceNumber' );
                     },
                     child: Image.asset('images/dice$leftDiceNumber.png')),
@@ -31,7 +34,9 @@ class _DicePageState extends State<DicePage> {
                 child: Container(
                   child: FlatButton(
                       onPressed: () {
-                        rightDiceNumber = 5;
+                        setState((){
+                          rightDiceNumber = 5;
+                        });
                         print('Rigth button was pressed. Value: $rightDiceNumber');
                       },
                       child: Image.asset('images/dice$rightDiceNumber.png')),

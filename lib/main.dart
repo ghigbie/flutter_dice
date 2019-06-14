@@ -14,7 +14,7 @@ class DiceeApp extends StatelessWidget {
           title: Text(APP_NAME),
           backgroundColor: Colors.red,
         ),
-        body: _DicePageState(),
+        body: DicePage(),
       )
     );
   }
