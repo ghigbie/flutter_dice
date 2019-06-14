@@ -22,7 +22,7 @@ class _DicePageState extends State<DicePage> {
                 child: FlatButton(
                     onPressed: () {
                       setState(() {
-                        leftDiceNumber = 4;
+                        leftDiceNumber = Random().nextInt(7);
                       });
                       print('Left button was pressed. Value: $leftDiceNumber' );
                     },
@@ -35,7 +35,7 @@ class _DicePageState extends State<DicePage> {
                   child: FlatButton(
                       onPressed: () {
                         setState((){
-                          rightDiceNumber = 5;
+                          rightDiceNumber = Random().nextInt(7);
                         });
                         print('Rigth button was pressed. Value: $rightDiceNumber');
                       },
